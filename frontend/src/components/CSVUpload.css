@@ -1,0 +1,106 @@
+.csv-upload {
+  padding: 1rem;
+}
+
+.csv-upload h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.section-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.options-config {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.config-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.config-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.config-group input[type="radio"],
+.config-group input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.dropzone {
+  border: 2px dashed #667eea;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f8f9ff;
+}
+
+.dropzone:hover {
+  border-color: #764ba2;
+  background: #f0f2ff;
+}
+
+.dropzone.active {
+  border-color: #764ba2;
+  background: #e8ebff;
+}
+
+.dropzone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.dropzone-content p {
+  color: #555;
+  margin: 0;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.csv-example {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.csv-example strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.csv-example pre {
+  background: white;
+  padding: 0.75rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  color: #333;
+}

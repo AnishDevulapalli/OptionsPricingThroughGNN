@@ -1,0 +1,107 @@
+.results-table-container {
+  margin-top: 1rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.9rem;
+}
+
+.results-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.results-table th {
+  padding: 1rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.results-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.results-table tbody tr:hover {
+  background-color: #f8f9ff;
+}
+
+.results-table td {
+  padding: 0.75rem;
+  color: #333;
+}
+
+.ticker {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.option-type {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.option-type.call {
+  background: #d4edda;
+  color: #155724;
+}
+
+.option-type.put {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.volatility {
+  color: #764ba2;
+  font-weight: 600;
+}
+
+.fair-value {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.results-summary {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.results-summary p {
+  margin: 0;
+  color: #555;
+}
+
+.results-summary strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .results-table {
+    font-size: 0.8rem;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 0.5rem 0.4rem;
+  }
+}
