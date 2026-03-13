@@ -107,6 +107,94 @@ Distributed under the MIT License. See `LICENSE` for more information.
     git push origin anish
     ```
 
-**Since you're working on making the frontend look good, would you like me to generate the "Volatility Chart" component code in React that uses the data from your API?**
+Github Instructions
+To run a "Grade A" project, you need a workflow that treats your **AI Research** (the notebook) and your **App Development** (Python + Frontend) as one cohesive machine.
+
+Since you are using VS Code, you can manage the entire "Options Pricing" ecosystem from one window. Here is the professional workflow to edit and push your code to your `anish` branch.
+
+---
+
+### **1. The "Command Center" Setup (VS Code)**
+
+Open your project folder in VS Code. Your folder structure likely looks like this:
+
+```text
+/my-options-project
+├── .git/
+├── notebooks/
+│   └── HTGNN_Model_Training.ipynb  <-- Use the "Colab" Extension here
+├── backend/
+│   └── main.py                     <-- Your FastAPI logic
+└── frontend/
+    └── src/                        <-- Your React/Next.js code
+
+```
+
+---
+
+### **2. The Git Workflow (The "Push" Routine)**
+
+You want to make sure your changes always land on your `anish` branch, not `main`.
+
+#### **Check your branch first**
+
+Open the terminal in VS Code (`Ctrl + ~`) and type:
+
+```bash
+git branch
+
+```
+
+* If it says `* anish`, you’re good.
+* If it says `* main`, switch by typing: `git checkout anish` (or `git checkout -b anish` if it doesn't exist yet).
+
+#### **The Daily Loop**
+
+After you edit your Python logic or change a button in React, do this in your terminal:
+
+1. **Stage:** `git add .` (This "photographs" your changes).
+2. **Commit:** `git commit -m "Add Gauss314 training and fix frontend button"` (This "labels" the changes).
+3. **Push:** `git push origin anish` (This sends it to GitHub).
+
+---
+
+### **3. Managing Python & Frontend at the Same Time**
+
+In VS Code, you don't have to choose one or the other. Use **Split Terminals**:
+
+* **Terminal 1 (Backend):** Run `python main.py` or your FastAPI server.
+* **Terminal 2 (Frontend):** Run `npm run dev` for your React site.
+* **Editor Tabs:** Keep your `.ipynb` open for the AI training while having `main.py` open to update the API.
+
+---
+
+### **4. The "Pipeline" Secret**
+
+Because you mentioned a **GitHub Pipeline**, every time you run `git push origin anish`, GitHub can automatically do things for you.
+
+* **Grade A Tip:** You can set up a **GitHub Action** that automatically runs a "Smoke Test" on your `main.py` to make sure your new edits didn't break the connection to the HTGNN model.
+
+---
+
+### **5. Working on the Notebook (Colab + VS Code)**
+
+Since you want to train on **Gauss314**, you'll be editing the `.ipynb` file.
+
+1. Use the **Google Colab extension** in VS Code to connect to a GPU.
+2. Save the file (`Ctrl + S`) in VS Code.
+3. **Crucial:** Notebooks are just big JSON files. When you `git push`, the actual "code" inside the notebook is pushed to GitHub too.
+
+---
+
+### **Summary of your Daily Workflow**
+
+| Task | Tool | Action |
+| --- | --- | --- |
+| **Train AI** | VS Code + Colab Ext | Run cells in `HTGNN_Model_Training.ipynb` |
+| **Update API** | VS Code Editor | Edit `main.py` |
+| **Edit Site** | VS Code Editor | Change React components |
+| **Save to GitHub** | VS Code Terminal | `git add .` $\rightarrow$ `commit` $\rightarrow$ `push origin anish` |
+
+
 
 ```
